@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Reusable Data Grid - Next.js
 
-## Getting Started
+A production-style reusable Data Grid module built with Next.js, React, and TypeScript.
 
-First, run the development server:
+## Features
 
+- Server-side pagination
+- Server-side sorting
+- Server-side filtering
+- Select/Dropdown filters
+- Boolean filters
+- Loading, Empty, Error states
+- Export to CSV
+- Export to Excel
+- Column visibility toggle
+- Action column
+- Drag & Drop column reordering
+- URL sync for pagination, sort, and filters
+- Generic reusable architecture
+
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- json-server
+- react-dnd
+
+## Run Project
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+App:
+bash
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Mock API:
+bash
+http://localhost:3001/users
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Notes
 
-## Learn More
+- Mock API is powered by `json-server`
+- Query params are synced with URL
+- Grid is generic and reusable for different entities
 
-To learn more about Next.js, take a look at the following resources:
+## Folder Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `components/DataGrid` → reusable grid UI
+- `hooks` → grid state and column management
+- `lib` → API and export helpers
+- `types` → shared TypeScript types
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Future Improvements
 
-## Deploy on Vercel
+- Debounced text filters
+- Persist column visibility/order in localStorage
+- Real Excel generation with `xlsx`
+- Better outside-click handling for dropdowns
+- Multi-column sorting
+- Row selection
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## نکات مهم برای اجرا
+
+### 1) نصب
+```bash
+npm install
