@@ -96,11 +96,7 @@ export default function HomePage() {
   return (
     <main className="page-container">
       <div className="page-header">
-        <h1>Reusable Data Grid</h1>
-        <p>
-          Server-side pagination, sorting, filtering, export, column visibility,
-          and drag & drop.
-        </p>
+        <h1>dynamic grid</h1>
       </div>
 
       <DataGrid<User>
